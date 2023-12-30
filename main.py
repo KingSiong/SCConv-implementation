@@ -146,13 +146,13 @@ def test(epoch):
             'acc': acc,
             'epoch': epoch,
         }
-        if not os.path.isdir('sc_checkpoint'):
-            os.mkdir('sc_checkpoint')
-        torch.save(state, './sc_checkpoint/ckpt.pth')
+        if not os.path.isdir('checkpoint'):
+            os.mkdir('checkpoint')
+        torch.save(state, './checkpoint/sc_ckpt.pth')
         best_acc = acc
 
 
-for epoch in range(start_epoch, start_epoch+50):
+for epoch in range(start_epoch, start_epoch+200):
     train(epoch)
     test(epoch)
     scheduler.step()
