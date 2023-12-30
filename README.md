@@ -6,7 +6,7 @@ these codes are based on [kuangliu: pytorch-cifar](https://github.com/kuangliu/p
 
 ## 实验记录
 
-在 CIFAR-10 数据集上，分别用 ResNet50 和将 $3\times 3$ 卷积替换成 SCConv 的 ResNet50，分别训练 100 个 epoch 的实验结果：
+在 CIFAR-10 数据集上，分别用 ResNet50 和将 $3\times 3$ 卷积替换成 SCConv 的 ResNet50，分别训练 200 个 epoch 的实验结果：
 
 |Model|Acc($\%$)|FLOPs(G)|Params(M)|
 |---|---|---|---|
